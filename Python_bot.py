@@ -49,10 +49,6 @@ class Bot:
                 break
            
         
-
-
-        
-        
     def firstpic(self):
         self.bot.find_element_by_class_name("_9AhH0").click()
         time.sleep(3)
