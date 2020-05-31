@@ -32,7 +32,6 @@ class Bot:
         time.sleep(5)
         self.bot.find_element_by_partial_link_text('followers').click()
         time.sleep(5)
-        #self.bot.find_element_by_partial_link_text('aman gupta').click()
         scroll_box=self.bot.find_element_by_xpath("/html/body/div[4]/div/div[2]")
         last_ht,ht=0,1
         while last_ht!=ht:
@@ -69,7 +68,7 @@ class Bot:
     def comment(self):
         my_bot.bot.find_element_by_css_selector("[aria-label='Comment']").click()
         time.sleep(1)
-        a=['Nicepic !!!','Areyy ladki sunderr!!!','You’re classy','stunning','You are graceful']
+        a=['Nicepic !!!','You’re classy','stunning','You are graceful']
         q=random.choice(a)
         my_bot.bot.find_element_by_xpath("/html/body/div[4]/div[2]/div/article/div[2]/section[3]/div/form/textarea").send_keys(q)
         time.sleep(1)
@@ -77,8 +76,6 @@ class Bot:
         time.sleep(15)  
             
            
-        
-#/html/body/div[4]/div[2]/div/article/div[2]/section[1]/span[1]/button
     def continue_Liking(self):
         while(True):
             nex=self.next_pic()
